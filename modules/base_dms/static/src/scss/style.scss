@@ -26,7 +26,7 @@ $gray-lighter: lighten($gray-base, 93.5%);
 //$brand-secondary: #5EC269;
 $brand-secondary: #AC3B61;//#5cdb95; //#ea1e63;
 //$brand-primary:#26282c;
-$brand-primary: #3AAFA9; //#05386B;//#BCE0FD;    //#009ABB;
+$brand-primary: #000080; // #3AAFA9; //#05386B;//#BCE0FD;    //#009ABB;
 $brand-meeting:$brand-secondary;
 $brand-enquiry:$brand-secondary;
 
@@ -282,7 +282,8 @@ textarea, select, .o_form_view.o_form_editable .o_form_field_many2manytags,
 
 .o_required_modifier {
     &.o_input, .o_input {
-        background-color: lighten($brand-primary, 35%) ! important;
+        background-color: lighten($brand-primary, 65%) ! important;
+        border-radius: 2px;
     }
 }
 
@@ -317,11 +318,12 @@ textarea, select, .o_form_view.o_form_editable .o_form_field_many2manytags,
 }
 
 .table-striped > tbody > tr:nth-of-type(2n) {
-    background-color: $brand-primary; //#2d91f5;
+   // background-color: $brand-primary; //#2d91f5;
+   background-color: #DCDCDC;
 }
 
 .o_list_view thead , .o_list_view.table thead {
- background-color: #2d91f5;
+   background-color: #A9A9A9;
 
 }
 
@@ -446,7 +448,7 @@ background-color:$brand-primary;
 .ui-autocomplete .ui-menu-item > a, .show .dropdown-menu .dropdown-item, .show .dropdown-menu .dropdown-header, .navbar-nav .show .dropdown-menu .dropdown-item, .navbar-nav .show .dropdown-menu .dropdown-header
 {
 color:white;
-background-color:$brand-primary;
+background-color: lighten($brand-primary, 55%) ! important;
 }
 .dropdown-item:hover {
 color: $brand-secondary;
