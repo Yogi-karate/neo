@@ -1,0 +1,15 @@
+
+services:
+  - docker
+
+script:
+  - docker build . -t tramm/neo
+  - docker run -d -p 127.0.0.1:80:4567 tramm/neo
+  - docker ps -a
+   
+after_success:
+  - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD && docker push tramm/neo
+ 
+notifications:
+  slack: saboogroupworkspace:tco87KFtlVfRyVKhQoaEfKQn
+  
