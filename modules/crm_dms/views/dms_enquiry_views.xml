@@ -186,6 +186,7 @@
 
                         </group>
                         <group string="Course Details">
+                            <field name="type_ids" widget="many2many_tags" string="Type"/>
                              <field name="university" options="{'no_create_edit': True}"/>
                             <field name="course" options="{'no_create_edit': True}"/>
                             <field name="desired_nation"/>
