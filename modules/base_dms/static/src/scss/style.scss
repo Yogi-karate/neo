@@ -447,9 +447,13 @@ background-color:$brand-primary;
 
 .ui-autocomplete .ui-menu-item > a, .show .dropdown-menu .dropdown-item, .show .dropdown-menu .dropdown-header, .navbar-nav .show .dropdown-menu .dropdown-item, .navbar-nav .show .dropdown-menu .dropdown-header
 {
-color:white;
-background-color: lighten($brand-primary, 55%) ! important;
+//color:white;
+//background-color: lighten($brand-primary, 55%) ! important;
+color:black;
+background-color:white;
 }
+
+
 .dropdown-item:hover {
 color: $brand-secondary;
 }
